@@ -5,6 +5,8 @@ import com.AnikateLearning.Inventory.Service.model.Inventory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
@@ -12,7 +14,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class InventoryServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InventoryServiceApplication.class, args);
+	SpringApplication.run(InventoryServiceApplication.class, args);
 	}
 
 	@Bean

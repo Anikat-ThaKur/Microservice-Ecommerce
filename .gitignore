@@ -12,6 +12,13 @@ target/
 *.iml
 *.ipr
 
+# Ignore socket files
+*.sock
+
+# Ignore database data files
+mongo-data/*
+mysql_keycloak_data/*
+
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -31,8 +38,35 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+# Ignore IDE-specific files
+.idea/
+
+# Ignore compiled class files and binaries
+api-gateway/bin/
+discovery-server/bin/
+inventory-service/bin/
+order-services/bin/
+product-service/bin/
+
+# Ignore database files
+grafana/grafana.db
+
+# Other common files to ignore
+*.log
+*.tmp
+*.swp
+*.bak
+*.class
+*.jar
+*.war
+*.ear
+
+dist/
+node_modules/
+.env
+.DS_Store
+
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
-.DS_Store

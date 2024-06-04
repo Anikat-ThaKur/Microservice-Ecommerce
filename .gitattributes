@@ -1,0 +1,8 @@
+# Handle line endings automatically for text files
+* text=auto
+
+# Mark binary files
+*.lock binary
+*.cnf binary
+mongo-data/* binary
+mysql_keycloak_data/* binary
